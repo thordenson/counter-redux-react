@@ -1,8 +1,7 @@
 import {
-    INCREMENT,
-    DECREMENT
-} from './actions'
-
+  INCREMENT,
+  DECREMENT
+} from './actions';
 
 // Step 1: Describe the ideal/typical state.
 // {
@@ -11,28 +10,27 @@ import {
 
 const initialState = { count: 0 };
 
-// Step 3: Write a reducer that accepts the current state and an action
-const counter = (state=initalState, action) => {
-    if (!action) {
-        return state;
-    }
+// Step 3: Write a reducer that accepts
+// the current state and an action
+export const counter = (state=initialState, action) => {
+  if (!action) {
+    return state;
+  }
 
-    switch(action.type) {
-        case INCREMENT:
-        // add 1 to the count
-        return {
-            count: state.count + 1
-        }
-            break;
-        case DECREMENT:
-        // subtract 1 from the count
-        return {
-            count: state.count - 1
-        }
-            break;
-        default:
-            return state;
-
-
-    }
-};
+  switch(action.type) {
+    case INCREMENT:
+      // add 1 to the count
+      return {
+        count: state.count + 1
+      }
+      break;
+    case DECREMENT:
+      // subtract 1 from the count
+      return {
+        count: state.count - 1
+      }
+      break;
+    default:
+      return state;
+  }
+}
