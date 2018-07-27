@@ -17,3 +17,13 @@ const DECREMENT = 'DECREMENT';
     type: 'DECREMENT'
   }
 */
+
+//Uses implicit return
+// Note the parens around the return object!
+const actionIncrement = () => ({
+    type: INCREMENT
+});
+
+const actionDecrement = () => ({
+    type: DECREMENT
+});
