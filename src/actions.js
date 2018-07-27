@@ -22,10 +22,10 @@ export const DECREMENT = 'DECREMENT';
 
 //Uses implicit return
 // Note the parens around the return object!
-const actionIncrement = () => ({
+export const actionIncrement = () => ({
     type: INCREMENT
 });
 
-const actionDecrement = () => ({
+export const actionDecrement = () => ({
     type: DECREMENT
 });
