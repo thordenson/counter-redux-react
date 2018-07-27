@@ -23,7 +23,6 @@ const counter = (state=initalState, action) => {
         return {
             count: state.count + 1
         }
-
             break;
         case DECREMENT:
         // subtract 1 from the count
